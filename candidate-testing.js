@@ -25,6 +25,7 @@ function askForName() {
   // TODO 1.1b: Ask for candidate's name //
 
   let candidateName = input.question("Enter your name: ");
+  console.log("Hi, Welcome for the Candidate Testing Quiz! " +candidateName);
 }
 
 function askQuestion() {
@@ -65,7 +66,7 @@ return grade;
 function runProgram() {
   askForName();
   // TODO 1.1c: Greet candidate using their name //
-   console.log("Hi, Welcome for the Candidate Testing Quiz " +candidateName);
+   
   askQuestion();
   gradeQuiz(this.candidateAnswers);
   
